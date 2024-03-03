@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.leftNav{
+    width: 50px;
+    height: 100vh;
+    background-color: whitesmoke;
+    transition: width 1s;
+}
+.leftNav:hover{
+    width: 200px;
+}
+.leftNav:hover .menuHead{
+    width: 200px;
+}
+.leftNav:hover .navList{
+    width: 200px;
+}
+.menuHead{
+    width: 20px;
+    height: auto;
+    padding: 10px 15px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 15px;
+    overflow: hidden;
+    transition: width 1s;
+}
+.MenuHead i {
+    width: 25px;
+    text-align: center;
+}
+
+.navList{
+    width: 40px;
+    height: auto;
+    text-align: left;
+    padding: 10px 5px;
+    transition: width 1s;
+}
+.navs{
+    padding: 10px 5px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 15px;
+    overflow: hidden;
+}
+.navs i {
+    width: 25px;
+    min-width: 25px;
+    text-align: center;
+}

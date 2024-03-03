@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.leftNav{
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(245, 245, 245, 0.3);
+    transition: width 1s;
+    margin-left: -150px;
+    transition: margin 0.4s;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(245, 245, 245, 0.232);
+    backdrop-filter: blur(3px);
+    position: absolute;
+}
+.leftNav:hover{
+    margin-left: 0px;
+}
+.leftNav:hover .menuHead{
+    flex-direction: row;
+}
+.leftNav:hover .navs{
+    flex-direction: row;
+}
+.menuHead{
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 15px;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    color: white;
+}
+.menuHead i {
+    width: 25px;
+    min-width: 25px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.navList{
+    width: auto;
+    height: auto;
+    text-align: left;
+    padding: 10px 10px;
+}
+
+.navs{
+    padding: 10px 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 15px;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    color: white;
+}
+.navs i {
+    width: 25px;
+    min-width: 25px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.navs:hover{
+    color: rgb(65, 227, 65);
+    border-bottom: 2px solid orangered;
+}
